@@ -64,7 +64,7 @@ pub fn main() {
                         }
                     }
                 }
-            } else if command_words[1] == "Sales" {
+            } else if command_words[1] == "Programmer" {
                 println!("{}", "Command accepted.".green());
                 for (key, value) in &employees {
                     for people in value {
