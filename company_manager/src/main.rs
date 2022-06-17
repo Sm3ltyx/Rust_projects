@@ -32,7 +32,7 @@ pub fn main() {
         for word in command.split_whitespace() {
             command_words.push(String::from(word));
         }
-        if command_words[0] == "add" && command_words[2] == "to"{
+        if command_words.len() == 4 && command_words[0] == "add" && command_words[2] == "to"{
             if command_words[3] == "Engineer" {
                 employees = department::engineering::add_to_engineering(String::from(&command_words[1]), employees);
                 println!("{}", "Command accepted.".green());
@@ -45,7 +45,7 @@ pub fn main() {
             } else {
                 println!("{}", "Command not valid.".red());
             }
-        } else if command_words[0] == "list" {
+        } else if command_words.len() == 2 && command_words[0] == "list" {
             if command_words[1] == "Engineer" {
                 println!("{}", "Command accepted.".green());
                 for (key, value) in &employees {
