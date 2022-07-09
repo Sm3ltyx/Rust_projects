@@ -1,0 +1,49 @@
+body {
+    background-color: #212529;
+}
+
+.container {
+    /*https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557*/
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.container p{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    text-align: center;
+    font-size: 130px;
+    background-color: #e63946;
+    color: #f1faee;
+    background-size: cover;
+    border-radius: 15px;
+    border-color: #f28482;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.container button{
+    width: fit-content;
+    text-align: center;
+    font-size: 80px;
+    background-color: #457b9d;
+    color: #a8dadc;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    border-color: #a8dadc;
+    border-width: 5px;
+    border-style: solid;
+    float: left;
+}
